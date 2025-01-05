@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jap Mala Counter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mala Jap <br>माला जाप</h1>
+    <div class="counter" id="counter">1</div>
+    <button id="increment">Increment</button>
+    <button id="reset">Reset</button>
+    <div>
+      <label for="mantraDropdown" class="mantra-label">मंत्र चुनें:</label>
+      <select id="mantraDropdown" class="mantra-dropdown">
+        <option value="om">ॐ - सार्वभौमिक शांति और दिव्य उपस्थिति के लिए</option>
+        <option value="gayatri">ॐ भूर भुवः स्वः तत्सवितुर्वरेण्यं। भर्गो देवस्य धीमहि। धियो यो नः प्रचोदयात्॥ - देवी गायत्री</option>
+        <option value="mahamrityunjaya">ॐ त्र्यंम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्। उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय मामृतात्॥ - भगवान शिव</option>
+        <option value="shanti">ॐ शान्ति शान्ति शान्ति॥ - शांति के लिए</option>
+        <option value="hanuman">ॐ हं हनुमते नमः - भगवान हनुमान</option>
+        <option value="sarveshaam">ॐ सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः। सर्वे भद्राणि पश्यन्तु मा कश्चिद्दुःखभाग्भवेत्॥ - सार्वभौमिक कल्याण के लिए</option>
+        <option value="saraswati">ॐ ऐं Saraswati Namah - देवी सरस्वती</option>
+        <option value="lakshmi">ॐ श्रीं महालक्ष्म्यै च नमः - देवी लक्ष्मी</option>
+        <option value="krishna">ॐ नमो भगवते वासुदेवाय - भगवान कृष्ण</option>
+        <option value="durga">ॐ दुं दुर्गायै नमः - देवी दुर्गा</option>
+        <option value="ganesha">ॐ गं गणपतये नमः - भगवान गणेश</option>
+        <option value="ram">ॐ श्रीराम जय राम जय जय राम - भगवान राम</option>
+        <option value="vishnu">ॐ नमो भगवते विष्णवे - भगवान विष्णु</option>
+        <option value="narayana">ॐ नमो नारायणाय - भगवान नारायण</option>
+        <option value="shivaya">ॐ नमः शिवाय - भगवान शिव</option>
+        <option value="surya">ॐ सूर्याय नमः - भगवान सूर्य</option>
+        <option value="shree">ॐ श्रीं श्रीं श्रीं - सभी देवताओं के लिए</option>
+        <option value="bagalamukhi">ॐ ह्लीं बगलामुखि सर्वदुष्टानाम वशीकुरु - देवी बगलामुखी</option>
+        <option value="mahalakshmi">ॐ महालक्ष्म्यै नमः - देवी लक्ष्मी</option>
+        <option value="siddhi">ॐ सिद्धि विनायकाय नमः - भगवान गणेश (सिद्धि विनायक)</option>
+        <option value="tripura">ॐ त्रिपुरेश्वराय नमः - भगवान त्रिपुर</option>
+        <option value="shani">ॐ शं शनैश्चराय नमः - ग्रह शनि</option>
+        <option value="rahu">ॐ रां राहवे नमः - राहु ग्रह</option>
+        <option value="ketu">ॐ कें केतवे नमः - केतु ग्रह</option>
+        <option value="mangal">ॐ अंगंगं मङ्गलाय नमः - मंगल ग्रह</option>
+        <option value="brihaspati">ॐ ब्रां बृहस्पतये नमः - बृहस्पति ग्रह</option>
+        <option value="budh">ॐ बुद्धाय नमः - बुध ग्रह</option>
+        <option value="shukra">ॐ शुक्राय नमः - शुक्र ग्रह</option>
+        <option value="chandra">ॐ सोमाय नमः - चंद्र ग्रह</option>
+        <option value="surya_mantra">ॐ आदित्याय च सोमाय मङ्गलाय बुधाय च। गुरु शुक्र शनिभ्यश्च राहवे केतवे नमः॥ - ग्रहों के लिए</option>
+        <option value="lakshmi_dhan">ॐ श्रीं महालक्ष्मी महा धन धान्य उत्पत्ति महा परिपूर्णता करदेवी नमः - देवी लक्ष्मी धन के लिए</option>
+        <option value="saraswati_vandana">ॐ श्री सरस्वत्यै नमः - देवी सरस्वती</option>
+        <option value="gayatri_hindi">ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं। भर्गो देवस्य धीमहि। धियो यो नः प्रचोदयात्॥ - देवी गायत्री (हिंदी)</option>
+      </select>
+    </div>
+    
+    <div class="affirmation" id="affirmation">मैं चिंता और तनाव से मुक्त हूँ। <br>
+
+      I am free from worry and stress.</div>
+    <div class="record-section">
+      <button id="record-toggle">Record Mantra</button> <!-- Toggle recording button -->
+    </div>
+    <div>
+      <button id="increment-recorded" disabled>Increment with Mantra</button> <!-- New button -->
+      <button id="auto-increment" disabled>Auto Increment to 108</button> <!-- New button -->
+      <p id="recording-status"></p>
+    </div>
+    
+    
+  </div>
+  <button id="play-button">Play Music</button>
+  <div style="text-align: center; background: #f7cba7; color: #4a2511; font-family: 'Arial', sans-serif; font-size: 14px; margin-top: 30px;">
+    <p>Made with ❤️ by Pari Goyal &copy; 2025. "Coding, Coffee, and a lot of Karma!"</p>
+  </div>
+  <audio id="background-music" src="bg-music.mp3" loop></audio>
+
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <p id="recordingStatus"></p>
+      <button id="closePopup" class="popup-close-btn">Close</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

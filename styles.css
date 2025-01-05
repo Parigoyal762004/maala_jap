@@ -1,0 +1,226 @@
+/* General body styles */
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background: linear-gradient(to bottom, #ff7f50, #ff6347, #ff4500, #ff8c00); */
+    color: #4a2511;
+}
+
+  
+  /* Popup overlay styles */
+  .popup-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .popup-close-btn {
+    background-color: #d91e18;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .popup-close-btn:hover {
+    background-color: #b71c15;
+  }
+  
+  /* Container section styles */
+  .container {
+    text-align: center;
+    padding: 8px;
+    background: linear-gradient(to bottom, #ff7f50, #ff6347, #ff4500, #ff8c00);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-color: #4a2511;
+    margin: 0px;
+  }
+  
+  h1 {
+    color: #d91e18;
+    margin-bottom: 0px;
+  }
+  
+  .counter {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #d91e18;
+  }
+  
+  button {
+    font-size: 16px;
+    color: #fff;
+    background-color: #d91e18;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #b71c15;
+  }
+  
+  /* Styling for affirmation input */
+  .affirmation {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+    background: #fff7e6;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #affirmationn {
+    font-size: 15px;
+    color: #da4835;
+    border-color: #a59052;
+    border-radius: 10px;
+    width: 100%; /* Make it responsive */
+    max-width: 500px;
+  }
+  
+  /* Record section styling */
+  .record-section {
+    margin-top: 20px;
+  }
+  
+  /* Mantra dropdown styling */
+  .mantra-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+    text-align: center;
+  }
+  
+  .mantra-dropdown {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .mantra-dropdown:hover {
+    border-color: #007BFF;
+    background-color: #f1faff;
+  }
+  
+  .mantra-dropdown:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .mantra-dropdown option {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mantra-dropdown option:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust font sizes for smaller screens */
+    body {
+      font-size: 14px;
+    }
+  
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .counter {
+      font-size: 24px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .mantra-dropdown {
+      width: 90%;
+      max-width: 100%;
+    }
+  
+    .mantra-dropdown option {
+      padding: 8px;
+    }
+  
+    /* Adjust input size for smaller screens */
+    #affirmationn {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    h1 {
+      font-size: 24px;
+    }
+  
+    .counter {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .mantra-dropdown {
+      font-size: 12px;
+    }
+  
+    .popup-content {
+      width: 80%;
+      padding: 15px;
+    }
+  }
+  
